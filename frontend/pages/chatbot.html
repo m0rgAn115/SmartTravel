@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Smartravel - Asistente Virtual</title>
+
+  <!-- Social media Meta Tags -->
+  <meta property="og:title" content="Smartravel | Viajes de Lujo y Experiencias Inolvidables">
+  <meta property="og:description" content="Descubre los mejores destinos de lujo con Smartravel. Ofrecemos paquetes exclusivos para paraísos de relajación, retiros en la naturaleza, experiencias culturales, aventuras épicas y más. Reserva ahora y vive una experiencia de viaje única y personalizada.">
+  <meta property="og:image" content="https://b9c34337d34eb8aa9af750796c9d08ec.cdn.bubble.io/f1721987399551x836382559522334200/SEO_SMARTRAVEL.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicons - Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" href="../img/imagenes_barra_navegacion/FAVICON_SMARTRAVEL.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--==============================
+      Google Fonts
+  ============================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/chatbot.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/encabezado_&_footer.css">
+  <link rel="stylesheet" href="../css/loader.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  
+</head>
+<body>
+ <!--==============================
+      Header Area
+    ==============================-->
+    <header class="vs-header header-layout6">
+      <div class="sticky-wrapper">
+        <div class="sticky-active">
+          <div class="container position-relative z-index-common">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="vs-logo">
+                  <a href="index.html"><img src="../img/imagenes_barra_navegacion/HOME_SMARTRAVEL.png" alt="logo" width="250px"></a>
+                </div>
+              </div>
+              <div class="col text-end">
+                <nav class="main-menu  menu-style1 d-none d-lg-block">
+                  <ul>
+                    <li>
+                      <a href="../pages/categoria.html">Categorías</a>
+                    </li>
+                    <li>
+                      <a href="#MAIN_FAQ">FAQ</a>
+                    </li>
+                    <li class="chatbot-item">
+                      <div class="chatbot-content">
+                        <img src="../img/chatbot-icon.png" class="chatbot-icon" alt="chatbot icon">
+                        <a href="../pages/chatbot.html" class="chatbot-link">TravelAssistance</a>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+                <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+              </div>
+              <div class="col-auto d-none d-xl-block">
+                <div class="header-right">
+                  <ul>
+                    <li class="mr-40">
+                      <div class="header-btns">
+                        <button class="searchBoxTggler">
+                          <i class="fal fa-search"></i>
+                        </button>
+                        <button class="sideCartToggler">
+                          <i class="fas fa-shopping-basket"></i><span class="button-badge">2</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="vs-btn style7" href="../pages/reserva.html" style="text-decoration: none;">
+                        Reserva Ahora
+                        <i>
+                          <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M4.85355 4.35355C5.04882 4.15829 5.04882 3.84171 4.85355 3.64645L1.67157 0.464466C1.47631 0.269204 1.15973 0.269204 0.964466 0.464466C0.769204 0.659728 0.769204 0.976311 0.964466 1.17157L3.79289 4L0.964466 6.82843C0.769204 7.02369 0.769204 7.34027 0.964466 7.53553C1.15973 7.7308 1.47631 7.7308 1.67157 7.53553L4.85355 4.35355ZM4 4.5H4.5V3.5H4V4.5Z"
+                              fill="white" />
+                          </svg>
+                        </i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Tu Asistente Virtual 24/7</h1>
+    </div>
+  </section>
+
+
+  <section class="input-container">
+    <input id="email-input" class="input-text" type="text" placeholder="Escriba su correo electrónico">
+  </section>
+
+  <!-- Chat Section -->
+  <section class="chat-container">
+
+    
+    <div class="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="chat-title">
+            <h2>SmartBot</h2>
+            <span class="status">En línea</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chat Messages -->
+      <div id="chat-box" class="chat-messages">
+        <!-- Los mensajes serán generados dinámicamente aquí -->
+      </div>
+
+      <div id="send-btn" class="chat-input">
+        <input id="user-input" type="text" placeholder="Escribe tu mensaje aquí...">
+        <button class="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="chat-features">
+      <h3>Características</h3>
+      <ul>
+        <li><i class="fas fa-clock"></i> Disponible 24/7</li>
+        <li><i class="fas fa-language"></i> Soporte multiidioma</li>
+        <li><i class="fas fa-bolt"></i> Respuestas instantáneas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-layout5 shape-mockup-wrap" style="background-color: black; position: relative;">
+    <div class="shape-mockup shape-half-outside-footer" data-top="0" data-right="0%" data-left="0%">
+        <img class="w-100" src="../img/index/shape_w_inv.png" alt="svg">
+    </div>
+    <div class="widget-area2">
+      <div class="container">
+        <div class="row g-5 justify-content-between">
+          <div class="col-md-6 col-xl-4">
+            <div class="widget footer-widget">
+              <div class="vs-widget-about">
+                <div class="footer-logo text-center d-block text-md-start">
+                  <a href="../index.html"><img src="../img/imagenes_barra_navegacion/HOME_SMARTRAVEL.png" alt="Travolo" class="logo" width="250px" /></a>
+                </div>
+                <p>Tu puerta de entrada a experiencias de viaje inolvidables en los destinos más exclusivos del mundo. Nuestro equipo está aquí para ofrecerte un servicio personalizado y de alta calidad, asegurando que cada viaje sea una experiencia única.</p>
+                <div class="social-style1">
+                  <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="widget footer-widget">
+              <h4 class="widget_title">Newsletter</h4>
+              <form class="newsletter-form">
+                <p class="form_text">Suscríbete a nuestro boletín para recibir actualizaciones.</p>
+                <input class="form-control" type="email" placeholder="hola@smartravel.com" />
+                <button type="submit" class="vs-btn style7">Suscríbete</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright-wrap">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-auto">
+            <p class="copyright-text">
+              Copyright &copy;<script>document.write(new Date().getFullYear())</script>
+              <img src="../img/index/TEXT.png" width="100px">
+               Todos los Derechos Reservados.
+          </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="copyright-menu">
+              <ul class="list-unstyled">
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Términos & Condiciones</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para manejar los mensajes dinámicos -->
+  <script src="../js/chatbot.js"></script>
+</body>
+</html>

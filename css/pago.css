@@ -1,0 +1,128 @@
+body {
+    background-color: #eef2f7;
+    font-family: 'Jost', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/pago-hero.jpg') no-repeat center center/cover;
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pago-title-form {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+h2.pago-title-form::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #050953;
+    margin: 8px auto 8px;
+}
+
+.pago {
+    padding: 2.5rem 0;
+    margin-top: 6rem; /* Espaciado superior adicional */
+}
+
+.pago h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.pago-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pago-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.pago-form label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #555;
+}
+
+.pago-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.pago-form .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.pago-form .input-group i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+.pago-form button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.85rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pago-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-style1 a {
+    margin-right: 1rem;
+    color: #ccc;
+}
+
+footer .social-style1 a:hover {
+    color: #007bff;
+}

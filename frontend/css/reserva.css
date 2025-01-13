@@ -1,0 +1,343 @@
+
+.encabezado__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.encabezado {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado__logo--icono {
+    max-width: 260px;
+}
+
+.encabezado__navegacion {
+    display: flex;
+    gap: 40px;
+}
+
+.encabezado__navegacion--lista {
+    display: flex;
+    gap: 40px; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado__navegacion--elemento {
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.banner__img {
+    max-width: 100%;
+}
+
+.banner__img--descripcion {
+    max-width: 1000px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ofertas {
+    margin-bottom: 112px;
+}
+
+.testimonios__titulo,
+.pago__titulo,
+.destinos__titulo,
+.busca__titulo,
+.ofertas__titulo {
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.testimonios__titulo--subrayado,
+.pago__titulo--subrayado,
+.destinos__titulo--subrayado,
+.busca__titulo--subrayado,
+.ofertas__titulo--subrayado {
+    width: 180px;
+    height: 4px;
+    background: var(--rojo);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ofertas__cards--grupo {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ofertas__cards--elemento {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
+    color: var(--blanco);
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ofertas__cards--japon {
+    background-image: url("/img/tokyo.png");
+}
+
+.ofertas__cards--cancun {
+    background-image: url("/img/cancun.jpeg");
+}
+
+
+
+.ofertas__card--destino-tipo {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.ofertas__card--destino-nombre {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   
+
+    
+}
+
+.ofertas__card--precio {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+
+}
+
+.destinos__elemento--boton,
+.ofertas__card--boton {
+    border-radius: 8px;
+    background: var(--rojo, #050953);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.destinos__elemento--boton-texto,
+.ofertas__card--boton-texto {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--blanco, #FFF);
+    text-decoration: none;
+}
+
+.busca__categorias {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.busca__categoria {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--gris-claro, #F5F5F5);
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.material-symbols-outlined {
+    color: var(--gris-oscuro, #8C8C8C);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destinos__lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+}
+
+.destinos__elemento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destinos__elemento--image {
+    width: 100%; /* Adapta el ancho al contenedor */
+    height: auto; /* Mantén las proporciones originales */
+    max-width: 1000px; /* Limita el ancho máximo */
+    max-height:400px; /* Limita la altura máxima */
+    object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
+    border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+
+.destinos__elemento--nombre {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.destinos__elemento--descripcion {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.testimonios {
+    margin-bottom: 112px;
+}
+
+.testimonios__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.testimonios__elemento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonios__texto {
+    color: var(--grafito, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.testimonios__autor {
+    margin-top: 12px;
+    display: flex;
+    gap: 24px;
+}
+
+.testimonios__autor--foto {
+    max-width: 86px;
+}
+
+.testimonios__autor--nombre {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -4px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
